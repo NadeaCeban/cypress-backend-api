@@ -5,7 +5,7 @@ describe('API sturdents', () => {
  it('Retrieve all students and validate the response', () => {
       cy.request({
         method: 'GET',
-        url: 'https://api.tech-global-training.com/students',
+   
       }).then((response) => {
         expect(response.status).to.eq(200)
         console.log(JSON.stringify(response.body))
